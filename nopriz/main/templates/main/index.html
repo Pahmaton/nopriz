@@ -38,7 +38,7 @@
             
     
 
-<form name="filter_form" id="filter_form" method="get" action="https://nrs.nopriz.ru/?s.registrationNumber=%D0%9F-033608">
+<form name="filter_form" id="filter_form" method="get" action="">
     <p>
         <button type="submit" class="btn btn-open-nrs">
             <span class="glyphicon glyphicon-filter"></span> Применить фильтр
@@ -111,7 +111,7 @@
                                     <td>
                         
                                                                                                                         
-                <div class="filter-wrapper filter-type-input-text"><input type="text" class="form-control" value="П-033608" name="s.registrationNumber" placeholder="Идентификационный номер"></div>
+                <div class="filter-wrapper filter-type-input-text"><input type="text" class="form-control" value="{{ user.code }}" name="s.registrationNumber" placeholder="Идентификационный номер"></div>
 
     
 
@@ -189,13 +189,13 @@
                             </tr>
                             <tr>
                                             <td>
-                                                                                                <img src="./Национальный реестр специалистов Ноприз_files/c739cf6cf409cba7310bd913f3bb5365.png">
+                                                                                               {{ user.code }}
                                                                                     </td>
                                             <td>
-                                                                                                <img src="./Национальный реестр специалистов Ноприз_files/77f5265ff81e4f315fce3fcdfd0bd72f.png">
+                                                                                                {{ user.name }}
                                                                                     </td>
                                             <td>
-                                                                                                <img src="./Национальный реестр специалистов Ноприз_files/b47f6a960ffd2e67885bc990b395f94c.png">
+                                                                                                {{ user.birthdate }}
                                                                                     </td>
                                             <td>
                                                                                                 
