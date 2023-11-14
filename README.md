@@ -1,4 +1,4 @@
 # nopriz
 
-nopriz/nopriz - проект
-nopriz/main - приложение
+- nopriz/nopriz - проект
+- nopriz/main - приложение
