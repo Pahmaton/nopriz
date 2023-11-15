@@ -1,4 +1,3 @@
-{% load qr_code %}
 {% load static %}
 <!DOCTYPE html>
 <!-- saved from url=(0057)https://nrs.nopriz.ru/?s.registrationNumber=%D0%9F-033608 -->
@@ -244,15 +243,7 @@
     </p>
 
     
-    {% with qr_code_url="https://nrs.nopriz.ru/?s.registrationNumber="|add:user.code %}
-    <div class="row">
-        <div class="col-md-5">
-        </div>
-        <div class="col-md-6">
-            {% qr_from_text text=qr_code_url  size="s" image_format="png" error_correction="L" %}
-        </div>
-    </div>
-    {% endwith %}
+    
     {% endif %}
     <style>
         table.specialist-work-type tr td {

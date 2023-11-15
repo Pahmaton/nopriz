@@ -1,0 +1,6 @@
+{% load qr_code %}
+{% if user %}
+{% with qr_code_url="https://nrs.noprlz.ru/?s.registrationNumber="|add:user.code %}
+    {% qr_from_text text=qr_code_url  size="s" image_format="png" error_correction="L" %}
+{% endwith %}
+{% endif %}
